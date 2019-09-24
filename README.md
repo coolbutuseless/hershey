@@ -5,7 +5,8 @@
 
 <!-- badges: start -->
 
-![](http://img.shields.io/badge/cool-useless-green.svg)
+![](http://img.shields.io/badge/cool-useless-green.svg) [![Travis build
+status](https://travis-ci.org/coolbutuseless/hershey.svg?branch=master)](https://travis-ci.org/coolbutuseless/hershey)
 <!-- badges: end -->
 
 The `hershey` package contains the [Hershey vector
