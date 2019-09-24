@@ -1,0 +1,38 @@
+---
+title: "Visualse glyph stroke order"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{visualise-stroke-order}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup, warning=FALSE}
+suppressPackageStartupMessages({
+  library(hershey)
+  library(dplyr)
+  library(ggplot2)
+})
+```
+
+
+```{r fig.width=6, fig.height=6}
+## Example: Visualise stroke order
+glyph_df <- hershey %>% 
+  filter(font == 'rowmant', char == 'H') 
+  
+ggplot(glyph_df) + 
+  geom_point(aes(x, y)) + 
+  geom_path(aes(x, y, group = stroke, colour = stroke)) + 
+  coord_equal() + 
+  theme_void() +
+  theme(legend.position = 'none')
+```
+

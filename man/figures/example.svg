@@ -1,0 +1,12 @@
+<svg width="200" height="300" viewBox="-15 -15 30 30" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0-12L-7 8M-1-9L5 9M0-9L6 9M0-12L7 9M-5 3L4 3M-9 9L-3 9M2 9L9 9M-7 8L-8 9M-7 8L-5 9M5 8L3 9M5 7L4 9M6 7L8 9" stroke="black" fill="transparent" stroke-width="0.5">
+      <animateTransform 
+          attributeName = "transform"
+          attributeType = "XML"
+          type          = "rotate"
+          from          = "0"
+          to            = "360"
+          dur           = "10s"
+          repeatCount   = "indefinite"/>
+  </path>
+</svg>

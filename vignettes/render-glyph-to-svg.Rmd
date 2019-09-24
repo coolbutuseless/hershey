@@ -1,0 +1,49 @@
+---
+title: "Render SVG glyph"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{render-glyph-to-svg}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(hershey)
+```
+
+
+
+
+## Example: SVG Glyph 
+
+Since the glyphs are available as SVG path objects they're easy to show within 
+an HTML document
+
+```{r}
+svg <- glue::glue('<svg width="200" height="300" viewBox="-15 -15 30 30" xmlns="http://www.w3.org/2000/svg">
+  <path d="{hershey_svg$rowmant[[34]]}" stroke="black" fill="transparent" stroke-width="0.5">
+      <animateTransform 
+          attributeName = "transform"
+          attributeType = "XML"
+          type          = "rotate"
+          from          = "0"
+          to            = "360"
+          dur           = "10s"
+          repeatCount   = "indefinite"/>
+  </path>
+</svg>')
+```
+
+
+```{r echo=FALSE, results='asis'}
+cat(svg)
+```
+
+
