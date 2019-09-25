@@ -5,3 +5,8 @@ cache: packages
 r_build_args: --no-build-vignettes
 r_check_args: --no-build-vignettes
 warnings_are_errors: false
+# environment variables set for all builds
+env:
+  global:
+  # don't treat missing suggested packages as error
+  - _R_CHECK_FORCE_SUGGESTS_=false
