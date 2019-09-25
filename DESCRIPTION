@@ -17,5 +17,6 @@ Suggests:
     ggplot2,
     glue,
     scales,
-    dplyr
+    dplyr,
+    threed
 VignetteBuilder: knitr
