@@ -88,6 +88,8 @@ Vignettes
     SVG](https://coolbutuseless.github.io/package/hershey/articles/render-glyph-to-svg.html)
   - [Visualise stroke
     order](https://coolbutuseless.github.io/package/hershey/articles/visualise-stroke-order.html)
+  - [3d text
+    rendering](https://coolbutuseless.github.io/package/hershey/articles/three-d-text.html)
 
 ## Glyph Representations
 
