@@ -2,7 +2,7 @@
 title: "Visualse glyph stroke order"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{visualise-stroke-order}
+  %\VignetteIndexEntry{Visualse glyph stroke order}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
